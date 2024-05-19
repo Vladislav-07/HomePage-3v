@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Портфолио Frontend-developer'a</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/adaptivIndex.css">
+
+</head>
+<body class="body" id="body">
+
+  <header class="header">
+    <div class="burgerMenuButton" id="menuBurgerButton">
+      <span class="lineBurgerMenu" id="lineBurgerMenu"></span>
+    </div>
+  </header>
+
+  <div class="menuBurger close" id="menuBurger">
+    <div class="navigation-container">
+      <h1 class="navigationTitle">Navigation:</h1>
+      <ul class="navigation">
+        <li class="navigationItem"><a href="#home" onclick="navigationItem()">Home</a></li>
+        <li class="navigationItem"><a href="#about" onclick="navigationItem()">About</a></li>
+        <li class="navigationItem"><a href="#stack" onclick="navigationItem()">Stack</a></li>
+        <li class="navigationItem"><a href="#project" onclick="navigationItem()">Project</a></li>
+        <li class="navigationItem"><a href="#contact" onclick="navigationItem()">Contact</a></li>
+      </ul>
+    </div>
+    <div class="settings-container">
+      <h1 class="settingsTitle">Settings:</h1>
+      <div class="activeColor-container">
+        <h1 class="subSettingsTitle colorTitle">Color:</h1>
+        <div class="colorBtn-container">
+          <button class="colorItem colorItemRed" onclick="activeColorRed()"></button>
+          <button class="colorItem colorItemGreen" onclick="activeColorGreen()"></button>
+          <button class="colorItem colorItemBlue" onclick="activeColorBlue()"></button>
+        </div>
+      </div>
+      <div class="theme-container">
+        <h1 class="subSettingsTitle themeTitle">Theme:</h1>
+        <div class="themeBtn-container">
+          <button class="btnTheme whiteTheme" onclick="themeWhite()">White</button> 
+          <button class="btnTheme blackTheme" onclick="themeBlack()">Black</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <section class="homeSection" id="home">
+      <div class="text-container-home">
+        <h1 class="helloHomeTitle">Привет,</h1>
+        <h2 class="nameHomeTitle">я Влад</h2>
+        <p class="subTitleHome"><span class="activeColor" id="activeColor">Frontend</span> разработчик</p>
+      </div>
+      <div class="hero-conteiner-home">
+        <img src="../img/homeImg/developerRed.png" alt="" class="heroImg" id="heroImgRed">
+        <img src="../img/homeImg/developerGreen.png" alt="" class="heroImg inactive" id="heroImgGreen">
+        <img src="../img/homeImg/developerBlue.png" alt="" class="heroImg inactive" id="heroImgBlue">
+      </div>
+    </section>
+
+    <section class="aboutSection" id="about">
+      <div class="titleAbout-container">
+        <h1 class="aboutTitle titleSection">Немножко обо мне</h1>
+      </div>
+      <div class="aboutText">
+        Я - Влад, мне 14 лет. <br>
+        <br>
+        <span class="activeColor">Frontend</span>-разработчик, создаю различного  рода <span class="activeColor">сайты</span>: лендинги, Интернет-магазины, одностраничные сайты,  динамичные веб-страницы и т.д. <br>
+        Работаю с такими <span class="activeColor" id="activeColor">инструментами</span>, как: HTML, CSS, JavaScript, VS Code, GitHub, Figma. <br>
+        Работаю-(л) с <span class="activeColor" id="activeColor">JavaScript-библиотеками</span>. Такими, как: Swiper Slider JS, Three JS. <br>
+        <br>
+        В моём портфолио <span class="activeColor">свыше 10 работ</span>, в дальнейшем их количество будет расти.
+      </div>
+    </section>
+
+    <section class="stackSection" id="stack">
+      <div class="titleStack-container">
+        <h1 class="titleStack titleSection">Мой стэк и технологии</h1>
+      </div>
+      <div class="stack-container">
+        <div class="icon-container"><img src="../img/stackIcon/html.png" alt="" class="iconStack iconStackHTML"></div>
+        <div class="icon-container"><img src="../img/stackIcon/css.png" alt="" class="iconStack iconStackCSS"></div>
+        <div class="icon-container"><img src="../img/stackIcon/javascript.png" alt="" class="iconStack iconStackJS"></div>
+        <div class="icon-container"><img src="../img/stackIcon/github.png" alt="" class="iconStack iconStackGitHub"></div>
+        <div class="icon-container"><img src="../img/stackIcon/figma.png" alt="" class="iconStack iconStackFigma"></div>
+        <div class="icon-container"><img src="../img/stackIcon/vscode.png" alt="" class="iconStack iconStackVCCode"></div>
+      </div>
+    </section>
+
+    <section class="projectSection" id="project">
+      <div class="titleProject-container">
+        <h1 class="titleProject titleSection">Мои проекты</h1>
+      </div>
+      <div class="swiper projectSwiper" id="projectSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="../img/projectImg/noshkafe.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/NoshKafe/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="../img/projectImg/coffeHouse.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/CoffeHouse/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="../img/projectImg/pomodoro.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/Pomodoro/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="../img/projectImg/realtor.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/Realtor/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="../img/projectImg/calculator.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/Calculator/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="../img/projectImg/airLine.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/AirLine/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="../img/projectImg/internetShop.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/InternetShop/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="../img/projectImg/numbergenerate.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/Number-Generator/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="../img/projectImg/wallpaper.png" alt="" class="projectImg"> 
+            <div class="siteInfo-container">
+              <a href="https://vladislav-07.github.io/Wallpaper-Home/index.html" class="openSite">Открыть</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="btn-swiper-container">
+        <button class="slidePrev btnSlider"><img src="../img/projectImg/btn.png" alt="" class="btnSliderPrev"></button>
+        <button class="slideNext btnSlider"><img src="../img/projectImg/btn.png" alt="" class="btnSliderNext"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="titleFooter-container">
+      <h1 class="titleFooter titleSection">Связь со мной</h1>
+    </div>
+    <div class="contact-container">
+      <a href="https://t.me/VlabikPi"><img src="../img/contactIcon/tg.png" alt=""></a>
+      <a href="https://vk.com/vlabikpi"><img src="../img/contactIcon/vk.png" alt=""></a>
+      <a href="https://github.com/Vladislav-07"><img src="../img/contactIcon/gh.png" alt=""></a>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
