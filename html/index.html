@@ -21,31 +21,33 @@
   </header>
 
   <div class="menuBurger close" id="menuBurger">
-    <div class="navigation-container">
-      <h1 class="navigationTitle">Navigation:</h1>
-      <ul class="navigation">
-        <li class="navigationItem"><a href="#home" onclick="navigationItem()">Home</a></li>
-        <li class="navigationItem"><a href="#about" onclick="navigationItem()">About</a></li>
-        <li class="navigationItem"><a href="#stack" onclick="navigationItem()">Stack</a></li>
-        <li class="navigationItem"><a href="#project" onclick="navigationItem()">Project</a></li>
-        <li class="navigationItem"><a href="#contact" onclick="navigationItem()">Contact</a></li>
-      </ul>
-    </div>
-    <div class="settings-container">
-      <h1 class="settingsTitle">Settings:</h1>
-      <div class="activeColor-container">
-        <h1 class="subSettingsTitle colorTitle">Color:</h1>
-        <div class="colorBtn-container">
-          <button class="colorItem colorItemRed" onclick="activeColorRed()"></button>
-          <button class="colorItem colorItemGreen" onclick="activeColorGreen()"></button>
-          <button class="colorItem colorItemBlue" onclick="activeColorBlue()"></button>
-        </div>
+    <div class="burberMenu-container">
+      <div class="navigation-container">
+        <h1 class="navigationTitle">Navigation:</h1>
+        <ul class="navigation">
+          <li class="navigationItem"><a href="#home" onclick="navigationItem()">Home</a></li>
+          <li class="navigationItem"><a href="#about" onclick="navigationItem()">About</a></li>
+          <li class="navigationItem"><a href="#stack" onclick="navigationItem()">Stack</a></li>
+          <li class="navigationItem"><a href="#project" onclick="navigationItem()">Project</a></li>
+          <li class="navigationItem"><a href="#contact" onclick="navigationItem()">Contact</a></li>
+        </ul>
       </div>
-      <div class="theme-container">
-        <h1 class="subSettingsTitle themeTitle">Theme:</h1>
-        <div class="themeBtn-container">
-          <button class="btnTheme whiteTheme" onclick="themeWhite()">White</button> 
-          <button class="btnTheme blackTheme" onclick="themeBlack()">Black</button>
+      <div class="settings-container">
+        <h1 class="settingsTitle">Settings:</h1>
+        <div class="activeColor-container">
+          <h1 class="subSettingsTitle colorTitle">Color:</h1>
+          <div class="colorBtn-container">
+            <button class="colorItem colorItemRed" onclick="activeColorRed()"></button>
+            <button class="colorItem colorItemGreen" onclick="activeColorGreen()"></button>
+            <button class="colorItem colorItemBlue" onclick="activeColorBlue()"></button>
+          </div>
+        </div>
+        <div class="theme-container">
+          <h1 class="subSettingsTitle themeTitle">Theme:</h1>
+          <div class="themeBtn-container">
+            <button class="btnTheme whiteTheme" onclick="themeWhite()">White</button> 
+            <button class="btnTheme blackTheme" onclick="themeBlack()">Black</button>
+          </div>
         </div>
       </div>
     </div>
@@ -53,7 +55,9 @@
 
   <main class="main">
 
-    <section class="homeSection" id="home">
+    <div class="homePoint" id="home"></div>
+
+    <section class="homeSection">
       <div class="text-container-home">
         <h1 class="helloHomeTitle">Привет,</h1>
         <h2 class="nameHomeTitle">я Влад</h2>
@@ -65,8 +69,10 @@
         <img src="../img/homeImg/developerBlue.png" alt="" class="heroImg inactive" id="heroImgBlue">
       </div>
     </section>
+  
+    <div class="aboutPoint" id="about"></div>
 
-    <section class="aboutSection" id="about">
+    <section class="aboutSection">
       <div class="titleAbout-container">
         <h1 class="aboutTitle titleSection">Немножко обо мне</h1>
       </div>
@@ -81,7 +87,9 @@
       </div>
     </section>
 
-    <section class="stackSection" id="stack">
+    <div class="stackPoint" id="stack"></div>
+
+    <section class="stackSection">
       <div class="titleStack-container">
         <h1 class="titleStack titleSection">Мой стэк и технологии</h1>
       </div>
@@ -95,7 +103,9 @@
       </div>
     </section>
 
-    <section class="projectSection" id="project">
+    <div class="projectPoint" id="project"></div>
+
+    <section class="projectSection">
       <div class="titleProject-container">
         <h1 class="titleProject titleSection">Мои проекты</h1>
       </div>
@@ -172,6 +182,7 @@
         <button class="slideNext btnSlider"><img src="../img/projectImg/btn.png" alt="" class="btnSliderNext"></button>
       </div>
     </section>
+
   </main>
 
   <footer class="footer" id="contact">
