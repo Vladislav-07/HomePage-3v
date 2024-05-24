@@ -30,13 +30,13 @@
     height: 350px;
   }
 
+  .stackSection {
+    margin: 200px 0 100px 0;
+  }
+
 }
 
 @media screen and (max-width: 1000px) {
-
-  .menuBurger {
-    font-size: 40px;
-  }
 
   .text-container-home {
     font-size: 50px;
@@ -117,6 +117,29 @@
 
 @media screen and (max-width: 650px) {
 
+  .menuBurger {
+    font-size: 30px;
+  }
+
+  .navigation-container {
+    padding: 0;
+  }
+
+  .navigationTitle {
+    font-size: 40px;
+  }
+
+  .settingsTitle {
+    font-size: 40px;
+  }
+
+  .subSettingsTitle {
+    font-size: 25px;
+  }
+
+  .homeSection {
+    margin: 150px 0 150px 0;
+  }
   
   .aboutText {
     font-size: 25px;
@@ -136,46 +159,63 @@
 
 }
 
-@media screen and (max-width: 500px) {
-
-  .header {
-    margin-bottom: 15%;
-  }
+@media screen and (max-width: 550px) {
 
   .menuBurger {
-    text-align: center;
-    margin-top: -5%;
+    font-size: 25px;
+  }
+
+  .burberMenu-container {
+    flex-direction: column;
+  }
+  
+  .navigation-container {
+    width: 100%;
+    border: none;
+    border-bottom: 5px solid var(--colorText);
+    /* margin: 0 0 20px 0; */
+    padding: 20px 0 20px 0;
+  }
+
+  .navigationTitle {
     font-size: 30px;
   }
 
-  .activeColor-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .settings-container {
+    width: 100%;
+    border: none;
+    padding: 20px 0 20px 0;
   }
 
-  .colorBtn-container {
-    justify-content: center;
+  .settingsTitle {
+    font-size: 30px;
   }
 
-  .theme-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
+  .subSettingsTitle {
+    font-size: 20px;
   }
 
-  .themeBtn-container {
-    justify-content: center;
+  .btnTheme {
+    width: 50px;
+    border-radius: 5px;
+    font-size: 17.5px;
+    margin: 0 15px 0 15px;
   }
+
+}
+
+@media screen and (max-width: 500px) {
 
   .colorItem {
-    margin: 10px;
+    margin: 0;
   }
 
   .aboutText {
     font-size: 23px;
+  }
+
+  .stackSection {
+    margin: 100px 0 100px 0;
   }
 
   .swiper-wrapper {
@@ -215,14 +255,6 @@
 
 @media screen and (max-width: 400px) {
 
-  .header {
-    margin-bottom: 20%;
-  }
-
-  .menuBurger {
-    font-size: 25px;
-  }
-
   .heroImg {
     max-width: 100%;
   }
@@ -233,6 +265,10 @@
 
   .subTitleHome {
     font-size: 25px;
+  }
+
+  .aboutSection {
+    margin: 100px 0 100px 0;
   }
 
   .swiper-wrapper {
