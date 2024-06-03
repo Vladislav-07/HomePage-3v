@@ -113,6 +113,10 @@
     font-size: 30px;
   }
 
+  .formTitle {
+    font-size: 40px;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -203,6 +207,14 @@
     margin: 0 15px 0 15px;
   }
 
+  input, textarea {
+    width: 400px;
+  }
+
+  .contactFormSubmit {
+    width: 400px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -250,6 +262,18 @@
 
   .btn-swiper-container {
     width: 70%;
+  }
+
+  .formTitle {
+    font-size: 30px;
+  }
+
+  input, textarea {
+    width: 300px;
+  }
+
+  .contactFormSubmit {
+    width: 300px;
   }
 
 }
