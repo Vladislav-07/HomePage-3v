@@ -81,3 +81,17 @@ slidePrev.addEventListener('click', () => {
 slideNext.addEventListener('click', () => {
   projectSwiper.slideNext();
 })
+
+
+const contactForm = document.getElementById('contactForm')
+
+const sendEmail = (event) => {
+  event.preventDefault()
+
+  emailjs.sendForm('service_1fdergc', 'template_72bb9r2', '#contactForm', 'jOaeTS9loYfguUrbb')
+    .then(() => {    
+      contactForm.reset()
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
