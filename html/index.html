@@ -79,7 +79,7 @@
         <br>
         <span class="activeColor">Frontend</span>-разработчик, создаю различного  рода <span class="activeColor">сайты</span>: лендинги, Интернет-магазины, одностраничные сайты,  динамичные веб-страницы и т.д. <br>
         Работаю с такими <span class="activeColor" id="activeColor">инструментами</span>, как: HTML, CSS, JavaScript, VS Code, GitHub, Figma. <br>
-        Работаю-(л) с <span class="activeColor" id="activeColor">JavaScript-библиотеками</span>. Такими, как: Swiper Slider JS, Three JS. <br>
+        Работаю-(л) с <span class="activeColor" id="activeColor">JavaScript-библиотеками</span>. Такими, как: Swiper Slider JS, Three JS, Email JS. <br>
         <br>
         В моём портфолио <span class="activeColor">свыше 10 работ</span>, в дальнейшем их количество будет расти.
       </div>
@@ -184,17 +184,20 @@
   </main>
 
   <footer class="footer" id="contact">
-    <div class="titleFooter-container">
-      <h1 class="titleFooter titleSection">Связь со мной</h1>
-    </div>
-    <div class="contact-container">
-      <a href="https://t.me/VlabikPi"><img src="../img/contactIcon/tg.png" alt=""></a>
-      <a href="https://vk.com/vlabikpi"><img src="../img/contactIcon/vk.png" alt=""></a>
-      <a href="https://github.com/Vladislav-07"><img src="../img/contactIcon/gh.png" alt=""></a>
+    <div class="form-container">
+      <h1 class="formTitle">Связь со мной</h1>
+      <form action="" class="contactForm" id="contactForm">
+        <input type="text" name="user_name" placeholder="Name" required class="nameInput" >
+        <input type="email" name="user_email" placeholder="Email" required class="emailInput">
+        <textarea name="user_message" placeholder="Message" id="" required class="message" ></textarea>
+        <p class="contact-message" id="contact-message"></p>
+        <button type="submit" class="contactFormSubmit">Send message</button>
+      </form>
     </div>
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script></script>
   <script src="../js/app.js"></script>
 </body>
 </html>
