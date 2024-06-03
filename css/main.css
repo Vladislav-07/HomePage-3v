@@ -241,6 +241,8 @@ section {
 .heroImg {
   width: 550px;
   max-width: 100%;
+  border-radius: 50px;
+  border: 5px solid var(--aciveColor);
 }
 
 .heroImg.inactive {
