@@ -90,7 +90,7 @@
 
   .heroImg {
     max-width: 50%;
-    margin: 0 0 50px 0;
+    margin: -50px 0 50px 0;
   }
   
   .swiper-wrapper {
@@ -147,6 +147,7 @@
   
   .heroImg {
     max-width: 70%;
+    margin: 0 0 50px 0;
   }
 
   .swiper-wrapper {
