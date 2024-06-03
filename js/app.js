@@ -29,32 +29,16 @@ function navigationItem() {
   burgerMenuButton.classList.remove('close')
 }
 
-let heroImgRed = document.getElementById('heroImgRed')
-let heroImgGreen = document.getElementById('heroImgGreen')
-let heroImgBlue = document.getElementById('heroImgBlue')
-
 function activeColorRed() {
   document.documentElement.style.setProperty('--aciveColor', '#FF0000')
-
-  heroImgRed.classList.remove('inactive')
-  heroImgGreen.classList.add('inactive')
-  heroImgBlue.classList.add('inactive')
 }
 
 function activeColorGreen() {
   document.documentElement.style.setProperty('--aciveColor', '#00A524')
-
-  heroImgGreen.classList.remove('inactive')
-  heroImgRed.classList.add('inactive')
-  heroImgBlue.classList.add('inactive')
 }
 
 function activeColorBlue() {
   document.documentElement.style.setProperty('--aciveColor', '#0400D3')
-
-  heroImgBlue.classList.remove('inactive')
-  heroImgGreen.classList.add('inactive')
-  heroImgRed.classList.add('inactive')
 }
 
 let themeColor = document.getElementById('body')
