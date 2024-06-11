@@ -3,10 +3,12 @@ let menuBurger = document.getElementById('menuBurger')
 let burgerMenuLine = document.getElementById('lineBurgerMenu')
 
 let body = document.querySelector('body')
+let header = document.querySelector('header')
 
 burgerMenuButton.addEventListener('click', () => {
   if (menuBurger.classList.value === 'menuBurger open') {
     body.classList.remove('hidden')
+    header.classList.add('defualtHeader')
     menuBurger.classList.remove('open')
     menuBurger.classList.add('close')
     burgerMenuLine.classList.remove('burgerMenuOpen')
@@ -14,6 +16,7 @@ burgerMenuButton.addEventListener('click', () => {
   }
   else if (menuBurger.classList.value === 'menuBurger close') {
     body.classList.add('hidden')
+    header.classList.remove('defualtHeader')
     menuBurger.classList.remove('close')
     menuBurger.classList.add('open')
     burgerMenuLine.classList.add('burgerMenuOpen')
@@ -41,19 +44,15 @@ function activeColorBlue() {
   document.documentElement.style.setProperty('--aciveColor', '#0400D3')
 }
 
-let themeColor = document.getElementById('body')
-
 function themeWhite() {
-  themeColor.style.backgroundColor = '#FFFFFF'  
-  themeColor.style.color = '#000000'
   menuBurger.style.backgroundColor = '#FFFFFF'
+  document.documentElement.style.setProperty('--backgroundColor', '#FFFFFF')
   document.documentElement.style.setProperty('--colorText', '#000000')
 }
 
 function themeBlack() {
-  themeColor.style.backgroundColor = '#1C1B22'
-  themeColor.style.color = '#FFFFFF'
   menuBurger.style.backgroundColor = '#1C1B22'
+  document.documentElement.style.setProperty('--backgroundColor', '#1C1B22')
   document.documentElement.style.setProperty('--colorText', '#FFFFFF')
 }
 
@@ -69,7 +68,6 @@ let result = ''
 if (count >= 10 && count <= 20) {
   result = ' лет'
   ageField.innerHTML = age + result
-  console.log('eguh')
 } else {
   count = age % 10
   if (count === 1) {
