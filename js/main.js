@@ -30,6 +30,7 @@ function navigationItem() {
   menuBurger.classList.add('close')
   burgerMenuLine.classList.remove('burgerMenuOpen')
   burgerMenuButton.classList.remove('close')
+  header.classList.add('defualtHeader')
 }
 
 function activeColorRed() {
